@@ -3,6 +3,15 @@
   margin: 0;
 }
 
+/* Custom additions below: */
+:root, * {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
 body {
   display: grid;
   place-items: center;
@@ -13,18 +22,23 @@ body {
 }
 
 .container {
+  font-family: "Manrope", sans-serif;
+  width: 100%;
+  max-width: 54rem;
   display: grid;
   grid: -webkit-max-content 3.2rem/1fr;
   grid: max-content 3.2rem/1fr;
-  width: 100%;
-  max-width: 54rem;
 }
 
 .wrapper {
   background: #313a48;
 }
+.wrapper .advice-number h4 {
+  color: #53ffaa;
+  font-size: 1.3rem;
+}
 .wrapper .advice-qoute p {
   color: #cee3e9;
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   font-weight: 700;
 }/*# sourceMappingURL=style.css.map */

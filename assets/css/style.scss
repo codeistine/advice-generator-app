@@ -3,9 +3,19 @@
     margin: 0;
 }
 
+/* Custom additions below: */
+
+:root, * {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
 $primaryColor: #202733;
 $secondaryColor: #313a48;
 $textColor: #cee3e9;
+$greenColor: #53ffaa;
 
 body {
     display: grid;
@@ -16,19 +26,27 @@ body {
     font-family: 'Manrope', sans-serif;
 }
 .container {
-    display: grid;
-    grid: max-content 3.2rem / 1fr;
+    font-family: "Manrope", sans-serif;
     width: 100%;
     max-width: 54rem;
+    display: grid;
+    grid: max-content 3.2rem / 1fr;
 }
 .wrapper {
     background: $secondaryColor;
+    .advice-number h4 {
+        color: $greenColor;
+        font-size: 1.3rem;
+    }
     .advice-qoute {
         p {
         color: $textColor;
-        font-size: 1.8rem;
+        font-size: 2.8rem;
         font-weight: 700;
         }
     }
 }
+
+
+
 
