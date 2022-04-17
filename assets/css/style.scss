@@ -65,7 +65,29 @@ body {
         font-weight: 700;
     }
 }
-
+button.advice-btn {
+    width: 6.4rem;
+    height: 6.4rem;
+    background: #53ffaa;
+    border-radius: 50%;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    place-self: end center;
+    transition: box-shadow 250ms;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    border: none;
+    &:is(:hover) {
+        box-shadow: 0px 0px 20px #53ffaa;
+      }
+      &:is(:hover) > img {
+        transform: rotate(135deg);
+      }
+    .dice-img {
+        transition: transform 250ms;
+    }
+}
 
 
 
